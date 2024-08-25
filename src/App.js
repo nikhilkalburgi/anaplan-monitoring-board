@@ -478,7 +478,7 @@ function Dashboard(props) {
 
   return (
     (openDialog)? <Dialog wid={openDialog.wid} mid={openDialog.mid} pid={openDialog.pid} taskList={taskList[openDialog.mid]} tokenValue={props.token.tokenValue} closeDialog={closeDialogFunc} setToken={props.setToken} /> :
-    <div style={{display: "grid", gap: "10px", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", width: "100%"}}>
+    <div style={{display: "grid", gap: "10px", gridTemplateColumns: "repeat(auto-fit, minmax(390px, 20px))", width: "100%"}}>
       <div onClick={()=>{refreshRef.current = true; setRefresh(false); setTimeout(()=>setRefresh(true), 20)}} className='refresh-btn'>Refresh</div>
       {(refresh)?
         Object.values(anaplanModels).map((value, index)=>{
