@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/anaplan-monitoring-board/static/css/main.e1b88f8b.css",
-    "main.js": "/anaplan-monitoring-board/static/js/main.877fc6f7.js",
+    "main.js": "/anaplan-monitoring-board/static/js/main.73022cc6.js",
     "index.html": "/anaplan-monitoring-board/index.html",
     "main.e1b88f8b.css.map": "/anaplan-monitoring-board/static/css/main.e1b88f8b.css.map",
-    "main.877fc6f7.js.map": "/anaplan-monitoring-board/static/js/main.877fc6f7.js.map"
+    "main.73022cc6.js.map": "/anaplan-monitoring-board/static/js/main.73022cc6.js.map"
   },
   "entrypoints": [
     "static/css/main.e1b88f8b.css",
-    "static/js/main.877fc6f7.js"
+    "static/js/main.73022cc6.js"
   ]
 }
