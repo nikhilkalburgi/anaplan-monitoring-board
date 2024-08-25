@@ -1,38 +1,408 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+.App-header {
+  padding: 10px;
+  padding-left: 60px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background: blue;
+  margin-top: 0px;
+  width: 100%;
+  text-align: left;
+  font-size: 2.7vw;
+  color: #fff;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50px);
+}
+.form > input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form > button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #1364fb;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #1050c5;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #1364fb;
+  text-decoration: none;
+}
+
+.form-placeholder {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  animation: animate 2s infinite linear;
+  opacity: 0.6;
+  width: 40%;
+  height: 60vh;
+  color: #ddd;
+}
+
+.login-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.card {
+  padding: 20px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px;
+  width: 80%;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+}
+
+.progress-circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.progress-number {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dasharray 0.35s;
+  transform: rotate(0);
+  transform-origin: 50% 50%;
+}
+
+.text-fields p {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: #ddd;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+.card-placeholder {
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 94%;
+  animation: animate 2s infinite linear;
+  color: #ddd;
+}
+
+.title-placeholder {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.progress-circle-placeholder {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+  border: 0.5px solid #ddd;
+  border-radius: 100%;
+}
+
+.text-fields-placeholder p {
+  width: 95%;
+  margin-bottom: 10px;
+  border: #ddd;
+  border-radius: 5px;
+  background-color: #d4d4d4;
+  font-size: 16px;
+  overflow-x: auto;
+  padding: 10px;
+  color: #ddd;
+}
+
+@keyframes animate{
+    0% {
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+.task-bar {
+  position: relative;
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  background-color: #efeded;
+  overflow: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.task-bar >  h4, h5 {
+  margin: 10px;
+}
+
+.task-bar-fieldkeys {
+  color: #7f7f7f;
+  font-size: x-small;
+}
+
+.task-bar-fieldkeys-placeholder {
+  padding: 20px;
+  border: 0.5px solid #ddd;
+  color: #ddd
+}
+
+.task-bar-status{
+  position: relative;
+  right: 20px;
+  font-size: 1.7vw;
+  font-weight: bold;
+  width: 100%;
+  text-align: end;
+}
+
+.action-container {
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.action-bar {
+  position: relative;
+  padding: 20px;
+  background-color: #efeded;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.action-bar > h4, h5 {
+  margin: 0px;
+}
+
+.dump-copy{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: small;
+  text-align: end;
+  border: 1px solid black;
+  padding: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.refresh-btn, .close-btn {
+  border: 0.5px solid;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #3636ed;
+  z-index: 2;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dialog-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+}
+
+
+.truck {
+  position: absolute;
+  left: 20px;
+  top: 43%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  animation: moveTruck 7s infinite;
+}
+
+.truck-body {
+  display: flex;
+  align-items: center;
+}
+
+.truck-cabin {
+  width: 40px;
+  height: 60px;
+  background-color: #333;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.truck-cabin::before {
+  content: '';
+  width: 20px;
+  height: 60px;
+  background-color: #333;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  border-radius: 2px;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+}
+
+.truck-trailer {
+  width: 80px;
+  height: 70px;
+  background-color: #666;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.truck-wheels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-left: -105px;
+}
+
+.wheel {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.wheel::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #999;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front-wheel {
+margin-right: 60px;
+}
+
+@keyframes moveTruck {
+  0% {
+      left: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+      left: calc(100% - 200px);
+  }
+  100% {
+      left: 20px;
   }
 }
