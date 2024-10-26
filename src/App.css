@@ -21,7 +21,7 @@ p::-webkit-scrollbar {
   margin-top: 0px;
   width: 100%;
   text-align: left;
-  font-size: 2.7vw;
+  font-size: 1.7vw;
   color: #fff;
 }
 
@@ -99,26 +99,37 @@ p::-webkit-scrollbar {
     width: 100%;
 }
 
+.env {
+  display: flex;
+  width: 100%;
+}
+
 .card {
-  padding: 20px;
+  padding: 10px;
   background-color: #e7e7e7;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
-  margin: 20px;
-  width: 80%;
+  margin: auto;
+  margin-block: 8px;
+  width: 75%;
+  height: 80%;
 }
 
 .title {
-  font-size: 15px;
-  margin-bottom: 20px;
+  font-size: 12px;
+  margin: 7px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .progress-circle {
   position: relative;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px auto;
+  width: 80px;
+  height: 80px;
 }
 
 .progress-circle-inner {
@@ -133,7 +144,7 @@ p::-webkit-scrollbar {
 }
 
 .progress-number {
-  font-size: 24px;
+  font-size: 19px;
   font-weight: bold;
 }
 
@@ -150,50 +161,63 @@ p::-webkit-scrollbar {
   transform-origin: 50% 50%;
 }
 
-.text-fields p {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: #ddd;
+.text-fields {
+  width: 35%;
+  margin-left: 10px;
+}
+
+.text-fields button {
+  padding: 5px;
+  margin: 5px;
+  border: 0.5px solid #bbb;
   border-radius: 5px;
   background-color: #d4d4d4;
-  font-size: 13px;
+  font-size: 12px;
   overflow-x: auto;
+  cursor: pointer;
 }
 
 .card-placeholder {
-  padding: 5px;
+  background-color: #e7e7e7;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
-  width: 94%;
+  margin: auto;
+  margin-block: 8px;
+  width: 75%;
+  height: 80%;
   animation: animate 2s infinite linear;
-  color: #ddd;
 }
 
 .title-placeholder {
   font-size: 15px;
-  margin-bottom: 20px;
-  color: #ddd;
+  margin: 7px;
+  color: #777575;
 }
 
 .progress-circle-placeholder {
   position: relative;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px auto;
+  width: 100px;
+  height: 75px;
   border: 0.5px solid #ddd;
   border-radius: 100%;
 }
 
-.text-fields-placeholder p {
-  margin-bottom: 0px;
-  border: #ddd;
+.text-fields-placeholder {
+  width: 20%;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.text-fields-placeholder button {
+  padding: 5px;
+  margin: 5px;
+  border: 0.5px solid #bbb;
   border-radius: 5px;
   background-color: #d4d4d4;
-  font-size: 13px;
+  font-size: 12px;
   overflow-x: auto;
-  padding: 10px;
-  color: #ddd;
+  cursor: pointer;
 }
 
 @keyframes animate{
@@ -283,7 +307,7 @@ h6 {
 .refresh-btn, .close-btn {
   border: 0.5px solid;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 40px;
   padding: 10px;
   border-radius: 5px;
@@ -292,6 +316,7 @@ h6 {
   z-index: 2;
   text-align: center;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .dialog-box {
@@ -387,5 +412,11 @@ margin-right: 60px;
   }
   100% {
       left: 20px;
+  }
+}
+
+@media all and (max-width: 1000px){
+  .env {
+    flex-direction: column;
   }
 }

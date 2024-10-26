@@ -13,159 +13,171 @@ const anaplanModels = {
       wid: "8a868cdd7cfc09d5017d2f68024b41dd",
       mid: "CF414323D7D84333B1D40B70B45AAA96",
       pid: "118000000028",
-      modelName: "PROD | DataHub | Import"
+      modelName: "DataHub | Import"
     },
     "cms": {
       wid: "8a868cd87cf708b8017d2f42e86c3b56",
       mid: "2386A475AE9444C48B1327B58E337743",
       pid: "118000000128",
-      modelName: "PROD | CMS"
+      modelName: "CMS"
     },
     "inpHDEP": {
       wid: "8a868cd87cf708b8017d2f0ebc743118",
       mid: "F9541D6D22534225A4B514467117A1DC",
       pid: "118000000065",
-      modelName: "PROD | INP | HDEP"
+      modelName: "INP | HDEP"
     },
     "inpMDEG": {
       wid: "8a868cd87cf708b8017d2f0ebc743118",
       mid: "639E24B10A024FC3844E662FBEE45A92",
       pid: "118000000065",
-      modelName: "PROD | INP | MDEG"
+      modelName: "INP | MDEG"
     },
     "inpAXLE": {
       wid: "8a868cd87cf708b8017d2f0ebc743118",
       mid: "CD7643B8C4FB4F02A25B3693897186E0",
       pid: "118000000065",
-      modelName: "PROD | INP | AXLE"
+      modelName: "INP | AXLE"
     },
     "inpTRANS": {
       wid: "8a868cd87cf708b8017d2f0ebc743118",
       mid: "BCF796F751D44912A2E82DC58C45B9EB",
       pid: "118000000065",
-      modelName: "PROD | INP | TRANS"
+      modelName: "INP | TRANS"
     },
     "020": {
       wid: "8a868cd87d3fe8da017d6d2e337b50d2",
       mid: "C6BC82739C4847F1A12DC4A863FD5EEE",
       pid: "118000000040",
-      modelName: "PROD | 020 FC"
+      modelName: "020 FC"
     },
     "590": {
       wid: "8a868cd87d3fe8da017d6d2e337b50d2",
       mid: "8731AA6533E84E45BE729F6447F5FF26",
       pid: "118000000040",
-      modelName: "PROD | 590 FC"
+      modelName: "590 FC"
     },
     "034": {
       wid: "8a868cd87d3fe8da017d6d2e337b50d2",
       mid: "EFDCEB65559F4ADDB1D0EF303B892A2A",
       pid: "118000000040",
-      modelName: "PROD | 034 FC"
+      modelName: "034 FC"
     },
     "export": {
       wid: "8a868cd87d3fe8da017d6d2e337b50d2",
       mid: "7EDA7AFC9E8E415C8AAC5312EA72BA32",
       pid: "118000000001",
-      modelName: "PROD | EXPORT LAYER"
+      modelName: "EXPORT LAYER"
     },
-    "sand_dh": {
+};
+
+const anaplanModels_sand = {
+  "sand_dh": {
       wid: "8a868cdb794dcdad0179b4761275391e",
       mid: "39807785E2E34F4BBB62991C8E89B44C",
       pid: "118000000028",
-      modelName: "SAND | DataHub | Import"
+      modelName: "DataHub | Import"
     },
     "sand_cms": {
       wid: "8a868cd97cf70a1b017d2f18b3d94241",
       mid: "BDD2CE14F8BE45E18BB73DB3C332DD83",
       pid: "118000000128",
-      modelName: "SAND | CMS"
+      modelName: "CMS"
     },
     "sand_inpHDEP": {
       wid: "8a868cd8794dc8380179b47904494098",
       mid: "2EB568E052B24056A09DB9B0BCA1D3B6",
       pid: "118000000065",
-      modelName: "SAND | INP | HDEP"
+      modelName: "INP | HDEP"
     },
     "sand_inpMDEG": {
       wid: "8a868cd8794dc8380179b47904494098",
       mid: "09300CCC92ED46A78F7DB76A52587AC8",
       pid: "118000000065",
-      modelName: "SAND | INP | MDEG"
+      modelName: "INP | MDEG"
     },
     "sand_inpAXLE": {
       wid: "8a868cd8794dc8380179b47904494098",
       mid: "39DDA72E55414F6D9113039E252CD2C9",
       pid: "118000000065",
-      modelName: "SAND | INP | AXLE"
+      modelName: "INP | AXLE"
     },
     "sand_inpTRANS": {
       wid: "8a868cd8794dc8380179b47904494098",
       mid: "F9A818D9C868413CB4998B083B68C79A",
       pid: "118000000065",
-      modelName: "SAND | INP | TRANS"
+      modelName: "INP | TRANS"
     },
     "sand_020": {
       wid: "8a868cdc83dd7cf80183f13740b578b4",
       mid: "E98A05B5C0A3489E836BB948FD32ACF7",
       pid: "118000000040",
-      modelName: "SAND | 020 FC"
+      modelName: "020 FC"
     },
     "sand_590": {
       wid: "8a868cdc83dd7cf80183f13740b578b4",
       mid: "F117BD0AA1CA4462B6F08A41A5157377",
       pid: "118000000040",
-      modelName: "SAND | 590 FC"
+      modelName: "590 FC"
     },
     "sand_034": {
       wid: "8a868cdc83dd7cf80183f13740b578b4",
       mid: "D3AF38D05BCB4D37A364A31D17295255",
       pid: "118000000040",
-      modelName: "SAND | 034 FC"
+      modelName: "034 FC"
     },
     "sand_export": {
       wid: "8a868cdc83dd7cf80183f13740b578b4",
       mid: "B32D3CACA6FA4C0F8374199B36CC78C2",
       pid: "118000000001",
-      modelName: "SAND | EXPORT LAYER"
+      modelName: "EXPORT LAYER"
     },
-    "test_dh": {
+}
+
+const anaplanModels_test = {
+"test_dh": {
       wid: "8a868cdb794dcdad0179b4761275391e",
       mid: "7837D3F72F91422A93AA3B6CF13D81B5",
       pid: "118000000028",
-      modelName: "TEST | DataHub | Import"
+      modelName: "DataHub | Import"
     },
     "test_cms": {
       wid: "8a868cd97cf70a1b017d2f18b3d94241",
       mid: "CCA364D913334EDD8595EE8A641C39F3",
       pid: "118000000128",
-      modelName: "TEST | CMS"
+      modelName: "CMS"
     },
     "test_020": {
-      wid: "8a868cdc83dd7cf80183f13740b578b4",
-      mid: "71458BA62D55432FB206D3AB11808425",
+      wid: "8a868c7091de9261019259151b194a98",
+      mid: "0E8B4B453242460C85AEAC01C5BF0FA3",
       pid: "118000000040",
-      modelName: "TEST | 020 FC"
+      modelName: "020 FC"
     },
     "test_590": {
-      wid: "8a868cdc83dd7cf80183f13740b578b4",
-      mid: "73E32A022A36445DB55CA63C6A0978E4",
+      wid: "8a868c7091de9261019259151b194a98",
+      mid: "86D44140FD3744C6ACC492C6FE09A9BC",
       pid: "118000000040",
-      modelName: "TEST | 590 FC"
+      modelName: "590 FC"
+    },
+    "test_069": {
+      wid: "8a868c7091de9261019259151b194a98",
+      mid: "BF6639670A2A44D295084D31AEE53507",
+      pid: "118000000040",
+      modelName: "069 FC"
     },
     "test_034": {
-      wid: "8a868cdc83dd7cf80183f13740b578b4",
-      mid: "46FB80DAC0CC46439B49927F6C54F447",
+      wid: "8a868c7091de9261019259151b194a98",
+      mid: "97C98D47D70E4A69A061C0BB7B46A00E",
       pid: "118000000040",
-      modelName: "TEST | 034 FC"
+      modelName: "034 FC"
     },
     "test_export": {
-      wid: "8a868cdc83dd7cf80183f13740b578b4",
-      mid: "EF2F596599394C7AB6D2358323BCCE77",
+      wid: "8a868c7091de9261019259151b194a98",
+      mid: "C764E9F456004F2692063BBFAB78696C",
       pid: "118000000001",
-      modelName: "TEST | EXPORT LAYER"
+      modelName: "EXPORT LAYER"
     }
-};
+}
 
 function Login(props) {
 
@@ -242,6 +254,13 @@ function Login(props) {
       setLoading(false);
       setLoginError("Login Failed! Please try again.")
     });
+  }
+
+  document.onkeydown = (event)=>{
+      console.log(event.key)
+        if(event.key === 'Enter') {
+          loginToAnaplan()
+        }
   }
 
   return (
@@ -463,53 +482,67 @@ function Card(props) {
     });
   }
 
+  const handleCopy = (text, event, name)=>{
+    navigator.clipboard.writeText(text);
+    event.target.style.backgroundColor = "#62df10";
+    event.target.innerHTML = "✔️";
+    setTimeout(()=> {
+      event.target.innerHTML = name;
+      event.target.style.backgroundColor = "#d4d4d4"
+    }, 2000);
+  }
+
   return (
        
     <div className="card" style={{aspectRatio:"1/1", transition: "0.5s all", opacity: opacity}} onDoubleClick={handleClick}>
 
     {(taskInfo)?
       <>
-      <h2 className="title">{props.modelName}</h2>
-      <div className="progress-circle">
-        <div className="progress-circle-inner">
-          <div className="progress-number">{parseInt(progress * 100)}%</div>
+      <h5 className="title">{props.modelName}</h5>
+      <div className="details">
+        <div className="progress-circle">
+          <div className="progress-circle-inner">
+            <div className="progress-number">{parseInt(progress * 100)}%</div>
+          </div>
+          <svg className="progress-ring" width="80" height="80">
+            <circle
+              className="progress-ring__circle"
+              stroke="#ddd"
+              strokeWidth="7"
+              fill="transparent"
+              r="30"
+              cx="40"
+              cy="40"
+              style={{ strokeDasharray: `339, 339` }}
+            />
+            <circle
+              className="progress-ring__circle"
+              stroke={(taskInfo.task?.taskState === "IN_PROGRESS")? "#1d47f0" : (taskInfo.task?.currentStep === "Complete.")? "#0acb07" : "#cf2c07"}
+              strokeWidth="7"
+              fill="transparent"
+              r="30"
+              cx="40"
+              cy="40"
+              style={{ strokeDasharray: `${progress * 100 * 3.39}, 339` }}
+            />
+          </svg>
         </div>
-        <svg className="progress-ring" width="120" height="120">
-          <circle
-            className="progress-ring__circle"
-            stroke="#ddd"
-            strokeWidth="7"
-            fill="transparent"
-            r="54"
-            cx="60"
-            cy="60"
-            style={{ strokeDasharray: `339, 339` }}
-          />
-          <circle
-            className="progress-ring__circle"
-            stroke={(taskInfo.task?.taskState === "IN_PROGRESS")? "#1d47f0" : (taskInfo.task?.currentStep === "Complete.")? "#0acb07" : "#cf2c07"}
-            strokeWidth="7"
-            fill="transparent"
-            r="54"
-            cx="60"
-            cy="60"
-            style={{ strokeDasharray: `${progress * 100 * 3.39}, 339` }}
-          />
-        </svg>
-      </div>
-      <div className="text-fields">
-        <p>{props.wid}</p>
-        <p>{props.mid}</p>
-        <p>{props.pid}</p>
+        <div className="text-fields">
+          <button onClick={(event)=> handleCopy(props.wid, event, "WID")}>WID</button>
+          <button onClick={(event)=> handleCopy(props.mid, event, "MID")}>MID</button>
+          <button onClick={(event)=> handleCopy(props.pid, event, "PID")}>PID</button>
+        </div>
       </div>
     </> : <div className="card-placeholder">
       <h2 className="title-placeholder"> ... </h2>
-      <div className="progress-circle-placeholder">
-      </div>
-      <div className="text-fields-placeholder">
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
+      <div className='details'>
+        <div className="progress-circle-placeholder">
+        </div>
+        <div className="text-fields-placeholder">
+        <button>...</button>
+        <button>...</button>
+        <button>...</button>
+        </div>
       </div>
     </div>}
     </div>
@@ -534,11 +567,35 @@ function Dashboard(props) {
   }
 
   return (
-    (openDialog)? <Dialog wid={openDialog.wid} mid={openDialog.mid} pid={openDialog.pid} taskList={taskList[openDialog.mid]} tokenValue={props.token.tokenValue} closeDialog={closeDialogFunc} setToken={props.setToken} /> :
-    <div style={{display: "grid", gap: "10px", gridTemplateColumns: "repeat(auto-fit, minmax(333px, 20px))", width: "100%", alignItems: "center", justifyContent: "center"}}>
-      <div onClick={()=>{refreshRef.current = true; setRefresh(false); setTimeout(()=>setRefresh(true), 20)}} className='refresh-btn'>Refresh</div>
+    (openDialog)? <Dialog wid={openDialog.wid} mid={openDialog.mid} pid={openDialog.pid} taskList={taskList[openDialog.mid]} tokenValue={props.token.tokenValue} closeDialog={closeDialogFunc} setToken={props.setToken} /> : <div className="env">
+
+    <div onClick={()=>{refreshRef.current = true; setRefresh(false); setTimeout(()=>setRefresh(true), 20)}} className='refresh-btn'>Refresh</div>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderRight: "0.5px solid #00f", marginTop: 20}}>
+    <h4 style={{width: "100%", position: 'absolute', top: -40}}>SAND</h4>
       {(refresh)?
         Object.values(anaplanModels).map((value, index)=>{
+          return (
+            <Card key={index} wid={value.wid} mid={value.mid} pid={value.pid} modelName={value.modelName} tokenValue={props.token.tokenValue} openDialog={openDialogFunc} refreshRef={refreshRef.current} setToken={props.setToken}/>
+          );
+        })
+        : null}
+
+    </div>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", marginTop: 20}}>
+        <h4 style={{width: "100%", position: 'absolute', top: -40}}>PROD</h4>
+      {(refresh)?
+        Object.values(anaplanModels_sand).map((value, index)=>{
+          return (
+            <Card key={index} wid={value.wid} mid={value.mid} pid={value.pid} modelName={value.modelName} tokenValue={props.token.tokenValue} openDialog={openDialogFunc} refreshRef={refreshRef.current} setToken={props.setToken}/>
+          );
+        })
+        : null}
+
+    </div>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderLeft: "0.5px solid #00f", marginTop: 20}}>
+        <h4 style={{width: "100%", position: 'absolute', top: -40}}>TEST</h4>
+      {(refresh)?
+        Object.values(anaplanModels_test).map((value, index)=>{
           return (
             <Card key={index} wid={value.wid} mid={value.mid} pid={value.pid} modelName={value.modelName} tokenValue={props.token.tokenValue} openDialog={openDialogFunc} refreshRef={refreshRef.current} setToken={props.setToken}/>
           );
@@ -546,6 +603,8 @@ function Dashboard(props) {
       : null}
 
     </div>
+    </div>
+    
   );
 }
 
