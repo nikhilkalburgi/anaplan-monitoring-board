@@ -126,6 +126,12 @@ const anaplanModels_sand = {
       pid: "118000000040",
       modelName: "034 FC"
     },
+    "sand_069": {
+      wid: "8a868cdc83dd7cf80183f13740b578b4",
+      mid: "9687CFFFC63E44BFA557654508B535B0",
+      pid: "118000000040",
+      modelName: "069 FC"
+    },
     "sand_export": {
       wid: "8a868cdc83dd7cf80183f13740b578b4",
       mid: "B32D3CACA6FA4C0F8374199B36CC78C2",
@@ -135,7 +141,7 @@ const anaplanModels_sand = {
 }
 
 const anaplanModels_test = {
-"test_dh": {
+    "test_dh": {
       wid: "8a868cdb794dcdad0179b4761275391e",
       mid: "7837D3F72F91422A93AA3B6CF13D81B5",
       pid: "118000000028",
@@ -392,7 +398,7 @@ function Dialog(props) {
                 <p className="task-bar-status">{value.taskState}</p>
               </div>
             )
-        })) 
+        }) ?? <h2 style={{position: 'absolute', top:'50%', left: '50%', transform:'translate(-50%, -50%)'}}>No Tasks Available</h2>) 
       }
     </div>
   );
@@ -513,7 +519,7 @@ function Card(props) {
               r="30"
               cx="40"
               cy="40"
-              style={{ strokeDasharray: `339, 339` }}
+              style={{ strokeDasharray: `189.24, 189.24` }}
             />
             <circle
               className="progress-ring__circle"
@@ -523,7 +529,7 @@ function Card(props) {
               r="30"
               cx="40"
               cy="40"
-              style={{ strokeDasharray: `${progress * 100 * 3.39}, 339` }}
+              style={{ strokeDasharray: `${progress * 100 * 1.8924}, 189.24` }}
             />
           </svg>
         </div>
@@ -570,8 +576,8 @@ function Dashboard(props) {
     (openDialog)? <Dialog wid={openDialog.wid} mid={openDialog.mid} pid={openDialog.pid} taskList={taskList[openDialog.mid]} tokenValue={props.token.tokenValue} closeDialog={closeDialogFunc} setToken={props.setToken} /> : <div className="env">
 
     <div onClick={()=>{refreshRef.current = true; setRefresh(false); setTimeout(()=>setRefresh(true), 20)}} className='refresh-btn'>Refresh</div>
-    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderRight: "0.5px solid #00f", marginTop: 20}}>
-    <h4 style={{width: "100%", position: 'absolute', top: -40}}>SAND</h4>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(150px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderRight: "0.5px solid #00f", marginTop: 15}}>
+    <h4 style={{width: "100%", position: 'absolute', top: -45}}>SAND</h4>
       {(refresh)?
         Object.values(anaplanModels).map((value, index)=>{
           return (
@@ -581,8 +587,8 @@ function Dashboard(props) {
         : null}
 
     </div>
-    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", marginTop: 20}}>
-        <h4 style={{width: "100%", position: 'absolute', top: -40}}>PROD</h4>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(150px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", marginTop: 15}}>
+        <h4 style={{width: "100%", position: 'absolute', top: -45}}>PROD</h4>
       {(refresh)?
         Object.values(anaplanModels_sand).map((value, index)=>{
           return (
@@ -592,8 +598,8 @@ function Dashboard(props) {
         : null}
 
     </div>
-    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(190px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderLeft: "0.5px solid #00f", marginTop: 20}}>
-        <h4 style={{width: "100%", position: 'absolute', top: -40}}>TEST</h4>
+    <div style={{display: "grid", position: 'relative', gridTemplateColumns: "repeat(auto-fit, minmax(150px, 20px))", width: "100%", height: "fit-content", alignItems: "center", justifyContent: "center", borderLeft: "0.5px solid #00f", marginTop: 15}}>
+        <h4 style={{width: "100%", position: 'absolute', top: -45}}>TEST</h4>
       {(refresh)?
         Object.values(anaplanModels_test).map((value, index)=>{
           return (

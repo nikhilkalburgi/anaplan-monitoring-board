@@ -105,20 +105,20 @@ p::-webkit-scrollbar {
 }
 
 .card {
-  padding: 10px;
+  padding: 6px;
   background-color: #e7e7e7;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
   margin: auto;
-  margin-block: 8px;
+  margin-block: 5px;
   width: 75%;
-  height: 80%;
 }
 
 .title {
-  font-size: 12px;
-  margin: 7px;
+  font-size: 11px;
+  margin: 5px;
+  white-space: nowrap;
 }
 .details {
   display: flex;
@@ -135,7 +135,7 @@ p::-webkit-scrollbar {
 .progress-circle-inner {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 11%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -144,7 +144,7 @@ p::-webkit-scrollbar {
 }
 
 .progress-number {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -167,12 +167,12 @@ p::-webkit-scrollbar {
 }
 
 .text-fields button {
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
   border: 0.5px solid #bbb;
   border-radius: 5px;
   background-color: #d4d4d4;
-  font-size: 12px;
+  font-size: 10px;
   overflow-x: auto;
   cursor: pointer;
 }
@@ -183,22 +183,21 @@ p::-webkit-scrollbar {
   text-align: center;
   cursor: pointer;
   margin: auto;
-  margin-block: 8px;
+  margin-block: 5px;
   width: 75%;
-  height: 80%;
   animation: animate 2s infinite linear;
 }
 
 .title-placeholder {
-  font-size: 15px;
-  margin: 7px;
+  font-size: 12px;
+  margin: 5px;
   color: #777575;
 }
 
 .progress-circle-placeholder {
   position: relative;
   width: 100px;
-  height: 75px;
+  height: 60px;
   border: 0.5px solid #ddd;
   border-radius: 100%;
 }
@@ -210,8 +209,8 @@ p::-webkit-scrollbar {
 }
 
 .text-fields-placeholder button {
-  padding: 5px;
-  margin: 5px;
+  padding: 4px;
+  margin: 2px;
   border: 0.5px solid #bbb;
   border-radius: 5px;
   background-color: #d4d4d4;
@@ -309,7 +308,7 @@ h6 {
   position: absolute;
   top: 10px;
   right: 40px;
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   color: #fff;
   background-color: #3636ed;
